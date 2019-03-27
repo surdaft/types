@@ -631,7 +631,6 @@ function wpcf_wpml_register_labels( $prefix, $data, $context = 'post' ) {
                 if ( $label == 'name' || $label == 'singular_name' ) {
                     wpcf_translate_register_string( 'Types-TAX',
                             $prefix . ' ' . $label, $string );
-                    continue;
                 }
                 if ( isset( $default['labels'][$label] ) && $string == $default['labels'][$label] ) {
                     wpcf_translate_register_string( 'Types-TAX', $label, $string );
@@ -648,7 +647,6 @@ function wpcf_wpml_register_labels( $prefix, $data, $context = 'post' ) {
                 if ( $label == 'name' || $label == 'singular_name' ) {
                     wpcf_translate_register_string( 'Types-CPT',
                             $prefix . ' ' . $label, $string );
-                    continue;
                 }
 
                 // Check others for defaults
